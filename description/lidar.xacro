@@ -6,7 +6,7 @@
     <joint name='laser_joint' type='fixed'>
         <parent link = 'chassis'/>
         <child link = 'laser_frame'/>
-        <origin xyz="0.1 0 0.175" rpy='0 0 0'/>
+        <origin xyz="0.25 0.1 0.175" rpy='0 0 0'/>
     </joint>
 
     <link name='laser_frame'>
@@ -43,8 +43,8 @@
                     </horizontal>
                 </scan>
                 <range>
-                    <min>0.3</min>
-                    <max>6</max>
+                    <min>0.15</min>
+                    <max>8</max>
                 </range>
             </ray>
             <plugin name="laser_controller" filename="libgazebo_ros_ray_sensor.so">
