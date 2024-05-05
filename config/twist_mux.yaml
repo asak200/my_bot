@@ -1,10 +1,11 @@
 twist_mux:
   ros__parameters:
-    navigation:
-      topic: cmd_vel
-      timeout: 0.5
-      priority: 10
-    keyboard:
-      topic: cmd_vel
-      timeout: 0.5
-      priority: 10
+    topics:
+      navigation:
+        topic   : cmd_vel_nav
+        timeout : 0.5
+        priority: 10
+      joystick:
+        topic   : cmd_vel_joy
+        timeout : 0.5
+        priority: 100
